@@ -1,22 +1,36 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-.container{
+button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: lightblue; 
+    border: 2px solid darkblue; 
+    color: darkblue; 
+}
+
+.container {
     display: flex;
     flex-wrap: wrap;
-    width: 640px;
-    height: 640px;
+    width: 960px; 
+    height: 960px; 
 }
 
 .square {
-    width: 40px;
+    width: 40px; 
     height: 40px;
-    color: black;
-    border: 1px black;
-    box-sizing: border-box;
+    border: 1px solid black;
+    box-sizing: border-box;/* Ensure border is included in the width and height */
+}
+
+.hovered {
+    background-color: blue; 
 }
